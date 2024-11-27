@@ -1,0 +1,44 @@
+Project elements
+
+Main Menu:
+    - Start working session button
+    - Previous working session history
+
+Set up Working session:
+    - Set chrono
+    - Set number of break
+    - Start button
+
+Working session:
+    - Activate do not disturb
+    - Work with screen turned off
+    - Detect if the app is closed/changed app
+    - Character will farm passively
+    - Elements farmed: xp, gold
+    - Last until end of chrono
+    - Button to allow a "break" (calculated automatically based on initial chronometer)
+    - Button to stop earlier but cost penalties
+    - If chrono is over, ask for stop or add time to chrono
+
+Normal end of working session (end of chrono or user press stop button):
+    - Get farmed elements = rewards
+    - Apply potential malus on rewards
+    - Add xp to character
+    - Add gold to player purse
+    - Record locally the session's data
+    - Button to go to main menu
+
+... end of working session (close or change app before end of chrono, not coming back after a break, etc.)
+    - All rewards are lost
+    - Apply permanent malus to character (lost of gold & xp)
+    - Button to go to main menu
+
+History:
+    - List of previous session data: Session num, date, Xp, Gold, time, nO lvlup
+    - Button to go to main menu
+
+Character view:
+    - Appearance of character
+    - Customize character
+    - Show level and xp
+    - gold inside purse
