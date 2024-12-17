@@ -28,7 +28,7 @@ Normal end of working session (end of chrono or user press stop button):
     - Record locally the session's data
     - Button to go to main menu
 
-... end of working session (close or change app before end of chrono, not coming back after a break, etc.)
+Anormal end of working session (close or change app before end of chrono, not coming back after a break, etc.)
     - All rewards are lost
     - Apply permanent malus to character (lost of gold & xp)
     - Button to go to main menu

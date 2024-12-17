@@ -2,8 +2,8 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Lorsque le bouton est enfoncé -->
-    <item android:state_pressed="true" android:color="#0000000"/>
+    <item android:state_pressed="true" android:color="#6DB8AC"/>
     <!-- Couleur de base -->
-    <item android:color="#FFFFFF"/>
+    <item android:color="#97F2E5"/>
 
 </selector>

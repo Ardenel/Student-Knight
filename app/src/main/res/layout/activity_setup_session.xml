@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background">
+
+    <!-- Each element has a constraint with the above element only and the space is managed using the marginTop property-->
+
+    <TextView
+        android:id="@+id/setUpMenuTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+
+        android:textColor="@color/title_color"
+        android:background="@color/title_background"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="50dp"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="30dp"
+
+        android:text="@string/set_up_menu_title_text" />
+
+    <LinearLayout
+        android:id="@+id/setUpMenuSetTimerHorizontalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+
+        app:layout_constraintTop_toBottomOf="@id/setUpMenuTitleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="70dp"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="30dp">
+
+        <LinearLayout
+            android:id="@+id/setUpMenuSetTimerVerticalLayoutHour"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:id="@+id/setUpMenuHourText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textAlignment="center"
+                android:textSize="20sp"
+
+                android:paddingHorizontal="5dp"
+
+                android:text="Hours" />
+
+            <Button
+                android:id="@+id/setUpMenuSetTimerPlusHourButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+
+                android:textColor="@color/main_menu_button_text"
+                android:background="@color/main_menu_button_background"
+
+                android:text="+" />
+
+            <TextView
+                android:id="@+id/setUpMenuSetTimerHourText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+
+                android:paddingHorizontal="5dp"
+                android:layout_marginVertical="3dp"
+
+                android:text="00" />
+
+            <Button
+                android:id="@+id/setUpMenuSetTimerMinusHourButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+
+                android:textColor="@color/main_menu_button_text"
+                android:background="@color/main_menu_button_background"
+
+                android:text="-" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:textSize="24sp"
+            android:textStyle="bold"
+
+            android:layout_marginVertical="5dp"
+            android:paddingVertical="78dp"
+
+            android:text=":"/>
+
+        <LinearLayout
+            android:id="@+id/setUpMenuSetTimerVerticalLayoutMin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:id="@+id/setUpMenuMinText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textAlignment="center"
+                android:textSize="20sp"
+
+                android:paddingHorizontal="5dp"
+
+                android:text="Minutes" />
+
+            <Button
+                android:id="@+id/setUpMenuSetTimerPlusMinButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+
+                android:textColor="@color/main_menu_button_text"
+                android:background="@color/main_menu_button_background"
+
+                android:text="+" />
+
+            <TextView
+                android:id="@+id/setUpMenuSetTimerMinText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+
+                android:paddingHorizontal="5dp"
+                android:layout_marginVertical="3dp"
+
+                android:text="00" />
+
+            <Button
+                android:id="@+id/setUpMenuSetTimerMinusMinButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+
+                android:textColor="@color/main_menu_button_text"
+                android:background="@color/main_menu_button_background"
+
+                android:text="-" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:textSize="24sp"
+            android:textStyle="bold"
+
+            android:layout_marginVertical="5dp"
+            android:paddingVertical="78dp"
+
+            android:text=":"/>
+
+
+        <LinearLayout
+            android:id="@+id/setUpMenuSetTimerVerticalLayoutSec"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:id="@+id/setUpMenuSecText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textAlignment="center"
+                android:textSize="20sp"
+
+                android:paddingHorizontal="5dp"
+
+                android:text="Seconds" />
+
+            <Button
+                android:id="@+id/setUpMenuSetTimerPlusSecButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+
+                android:textColor="@color/main_menu_button_text"
+                android:background="@color/main_menu_button_background"
+
+                android:text="+" />
+
+            <TextView
+                android:id="@+id/setUpMenuSetTimerSecText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+
+                android:paddingHorizontal="5dp"
+                android:layout_marginVertical="3dp"
+
+                android:text="00" />
+
+            <Button
+                android:id="@+id/setUpMenuSetTimerMinusSecButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+
+                android:textColor="@color/main_menu_button_text"
+                android:background="@color/main_menu_button_background"
+
+                android:text="-" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/setUpMenuEditBreakText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:hint="Number of Breaks (max 2 digits)"
+        android:textSize="12sp"
+        android:textColor="@color/title_color"
+
+        app:layout_constraintTop_toBottomOf="@id/setUpMenuSetTimerHorizontalLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="30dp"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="10dp"
+
+        android:ems="20"
+        android:inputType="number"
+        android:maxLength="2"/>
+
+    <Button
+        android:id="@+id/setUpMenuStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/setUpMenuEditBreakText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:textColor="@color/main_menu_button_text"
+        android:background="@color/main_menu_button_background"
+
+        android:layout_marginTop="70dp"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="40dp"
+
+        android:text="@string/set_up_menu_start_button" />
+
+    <Button
+        android:id="@+id/setUpMenuReturnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/setUpMenuStartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:textColor="@color/main_menu_button_text"
+        android:background="@color/main_menu_button_background"
+
+        android:layout_marginTop="30dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="15dp"
+
+        android:text="@string/set_up_menu_return_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

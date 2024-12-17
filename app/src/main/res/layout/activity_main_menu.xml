@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background">
+
+        <!-- Each element has a constraint with the above element only and the space is managed using the marginTop property-->
+
+        <TextView
+            android:id="@+id/mainMenuTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="24sp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+
+            android:textColor="@color/title_color"
+            android:background="@color/title_background"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            android:layout_marginTop="40dp"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="60dp"
+
+            android:text="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/mainMenuImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/main_menu_logo_content_desc"
+            app:layout_constraintTop_toBottomOf="@id/mainMenuTitleText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            android:layout_marginTop="40dp"
+            android:padding="5dp"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        <Button
+            android:id="@+id/mainMenuStartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/mainMenuImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            android:textColor="@color/main_menu_button_text"
+            android:background="@color/main_menu_button_background"
+
+            android:layout_marginTop="150dp"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="60dp"
+
+            android:text="@string/main_menu_start_button" />
+
+        <Button
+            android:id="@+id/mainMenuHistoryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/mainMenuStartButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            android:background="@color/main_menu_button_background"
+            android:textColor="@color/main_menu_button_text"
+
+            android:layout_marginTop="50dp"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="30dp"
+            android:text="@string/main_menu_history_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

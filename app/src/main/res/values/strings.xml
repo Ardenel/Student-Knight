@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">Student Knight</string>
-    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="title_activity_main_menu">Main Menu</string>
+    
+    <!-- Main Menu Element-->
+    <string name="main_menu_start_button">Start</string>
+    <string name="main_menu_history_button">History</string>
+    <string name="main_menu_quit_button">Quit</string>
+    <string name="main_menu_logo_content_desc">The logo of the app</string>
+
+    <!-- Set up Menu Element-->
+    <string name="set_up_menu_title_text">Set up your session</string>
+    <string name="set_up_menu_return_button">Return</string>
+    <string name="set_up_menu_start_button">Start</string>
+
 </resources>

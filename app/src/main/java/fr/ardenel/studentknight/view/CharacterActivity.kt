@@ -1,4 +1,4 @@
 package fr.ardenel.studentknight.view
 
-class Character {
+class CharacterActivity {
 }
