@@ -19,19 +19,12 @@ class SetUpSessionActivity : ComponentActivity() {
     private lateinit var decreaseHourButton: Button
     private lateinit var increaseMinButton: Button
     private lateinit var decreaseMinButton: Button
-    private lateinit var increaseSecButton: Button
-    private lateinit var decreaseSecButton: Button
 
     private lateinit var setUpHourText: TextView
     private lateinit var setUpMinText: TextView
-    private lateinit var setUpSecText: TextView
 
     private var hourTimer = 0
     private var minTimer = 0
-    private var secTimer = 0
-
-    private val handler = Handler(Looper.getMainLooper())
-    private var runnable: Runnable? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,13 +37,9 @@ class SetUpSessionActivity : ComponentActivity() {
         decreaseHourButton = findViewById(R.id.setUpMenuSetTimerMinusHourButton)
         increaseMinButton = findViewById(R.id.setUpMenuSetTimerPlusMinButton)
         decreaseMinButton = findViewById(R.id.setUpMenuSetTimerMinusMinButton)
-        increaseSecButton = findViewById(R.id.setUpMenuSetTimerPlusSecButton)
-        decreaseSecButton = findViewById(R.id.setUpMenuSetTimerMinusSecButton)
 
         setUpHourText = findViewById(R.id.setUpMenuSetTimerHourText)
         setUpMinText = findViewById(R.id.setUpMenuSetTimerMinText)
-        setUpSecText = findViewById(R.id.setUpMenuSetTimerSecText)
-
         //Send to next activity the session parameters (not directly using the intent method) so to do and to determine
         startButton.setOnClickListener{
             val intent = Intent(this, CurrentSessionActivity::class.java)
@@ -66,10 +55,8 @@ class SetUpSessionActivity : ComponentActivity() {
         //Find a better way to keep increasing with long touch
         increaseHourButton.setOnClickListener{setTime("hour",1)}
         decreaseHourButton.setOnClickListener{setTime("hour", -1)}
-        increaseMinButton.setOnClickListener{setTime("min",1)}
-        decreaseMinButton.setOnClickListener{setTime("min", -1)}
-        increaseSecButton.setOnClickListener{setTime("sec",1)}
-        decreaseSecButton.setOnClickListener{setTime("sec", -1)}
+        increaseMinButton.setOnClickListener{setTime("min",5)}
+        decreaseMinButton.setOnClickListener{setTime("min", -5)}
 
     }
 
@@ -82,10 +69,6 @@ class SetUpSessionActivity : ComponentActivity() {
             "min" -> {
                 minTimer = (minTimer + value).coerceIn(0, 59)
                 setUpMinText.text = String.format("%02d", minTimer)
-            }
-            "sec" -> {
-                secTimer = (secTimer + value).coerceIn(0,59)
-                setUpSecText.text = String.format("%02d", secTimer)
             }
         }
     }

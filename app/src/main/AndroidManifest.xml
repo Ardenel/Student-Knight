@@ -29,6 +29,12 @@
             android:label="SetUpMenuActivity"
             android:parentActivityName=".view.MainMenuActivity"
             />
+        <activity
+            android:name=".view.CurrentSessionActivity"
+            android:exported="false"
+            android:label="CurrentSessionActivity"
+            android:parentActivityName=".view.SetUpSessionActivity"
+            />
     </application>
 
 </manifest>
