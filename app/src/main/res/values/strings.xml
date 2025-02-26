@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Student Knight</string>
     <string name="title_activity_main_menu">Main Menu</string>
-    
+
     <!-- Main Menu Element-->
     <string name="main_menu_start_button">Start</string>
     <string name="main_menu_history_button">History</string>
@@ -12,5 +12,7 @@
     <string name="set_up_menu_title_text">Set up your session</string>
     <string name="set_up_menu_return_button">Return</string>
     <string name="set_up_menu_start_button">Start</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
