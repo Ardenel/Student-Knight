@@ -1,0 +1,48 @@
+Description of data flows:
+
+Main menu -> Start working session button
+    No data
+
+Set up Working session -> Current Session
+    Local :
+        Timer (selected by user),
+        Number of break (selected by user)
+
+Current session -> Normal end of working session
+    Local :
+        Timer (automatically decreased),
+        Number of break (automatically decreased when user press break button),
+        Penalties (periodically calculated based on remain time and breaks),
+        XP (automatically and randomly increased in random interval),
+        Gold (automatically and randomly increased in random interval)
+    (If timer > 1h) -> Online (every 1h) :
+        XP,
+        Gold,
+        Penalties
+
+End of working session -> History
+    Online (all session)
+    Local (for the last 5 sessions):
+        Session number (auto-incremented),
+        Date,
+        Time (initial timer),
+        Number of break (initial number of break),
+        Earned XP (total generated during session),
+        Earned Gold (total generated during session),
+        Penalties (if session stopped before end),
+        Received XP (earned XP - penalties),
+        Received Gold (earned Gold - penalties),
+        Character level up (if received XP > required XP for next level)
+
+
+Character view
+    Online
+    Local :
+        Name (selected by user),
+        Pieces of equipments,
+        Total Xp,
+        Level,
+        Gold,
+        Best timer (from best session),
+        Best XP (from best session),
+        Best Gold (from best session)

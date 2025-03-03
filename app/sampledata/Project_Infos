@@ -1,4 +1,4 @@
-    Project elements
+Project elements
 
 Main Menu:
     - Start working session button
@@ -9,7 +9,7 @@ Set up Working session:
     - Set number of break
     - Start button
 
-Working session:
+Current session:
     - Activate do not disturb
     - Work with screen turned off
     - Detect if the app is closed/changed app
