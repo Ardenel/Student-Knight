@@ -1,11 +1,10 @@
 package fr.ardenel.studentknight.view
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import fr.ardenel.studentknight.R
+import androidx.fragment.app.FragmentActivity
 import fr.ardenel.studentknight.databinding.ActivityMainBinding
 
-class MainActivity : ComponentActivity() {
+class MainActivity : FragmentActivity()  {
 
     private lateinit var binding: ActivityMainBinding
 
